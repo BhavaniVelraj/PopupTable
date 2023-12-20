@@ -1,0 +1,64 @@
+{
+    "Employees": [ 
+        {
+            "employeeId":100,
+            "firstName":[
+                { "name": "SubItem 1.1"},
+                { "name": "SubItem 1.2"}
+            ],
+            "lastName":"Chen",   
+            "email":"john.chen@gmail.com",
+            "hireDate":"2008-10-16"
+        },   
+        {
+            "employeeId":101,
+            "firstName":[
+                { "name": "SubItem 1.1"},
+                { "name": "SubItem 1.2"}
+            ],
+            "lastName":"Job",   
+            "email":"ameya.job@gmail.com",
+            "hireDate":"2013-03-06"
+        },   
+        {
+            "employeeId":102,
+            "firstName":[
+                { "name": "SubItem 1.1"},
+                { "name": "SubItem 1.2"}
+            ],
+            "lastName":"Fay", 
+            "email":"pat.fey@gmail.com",
+            "hireDate":"2001-02-06"
+        }, 
+        {
+            "employeeId":103,
+            "firstName":[
+                { "name": "SubItem 1.1"},
+                { "name": "SubItem 1.2"}
+            ],
+            "lastName":"Vihan",   
+            "email":"jin.vihan@gmail.com",
+            "hireDate":"2010-08-22"
+        },   
+        {
+            "employeeId":104,
+            "firstName":[
+                { "name": "SubItem 1.1"},
+                { "name": "SubItem 1.2"}
+            ],
+            "lastName":"Doe",   
+            "email":"alex.doe@gmail.com",
+            "hireDate":"2018-04-15"
+        },   
+        {
+            "employeeId":105,
+            "firstName":[
+                { "name": "SubItem 1.1"},
+                { "name": "SubItem 1.2"}
+            ],
+            "lastName":"Omieo", 
+            "email":"felix.omieo@gmail.com",
+            "hireDate":"2006-07-30"
+        }  
+    ] 
+}
