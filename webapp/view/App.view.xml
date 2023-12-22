@@ -5,13 +5,12 @@
 	displayBlock="true">
          <Shell>
               <App class="myAppDemoWT" id="app">
-                        <Panel
-                                class="sapUiResponsiveMargin"
-                                width="auto"
-                                height="500px">
+                        <pages>
+                        <Page>
                                     <mvc:XMLView
-                                            viewName="ui5.walkthrough.view.Container"/>
-                        </Panel>
+                                            viewName="ui5.walkthrough.view.Container" height="100%"/>
+                                            </Page>
+                        </pages>
                 </App>
         </Shell>
 </mvc:View>

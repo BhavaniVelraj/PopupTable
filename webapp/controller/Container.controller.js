@@ -4,18 +4,23 @@ sap.ui.define([
     "sap/m/Page",
     "sap/m/Column",
     "sap/ui/core/Icon",
-    "sap/ui/core/Fragment"
+    "sap/ui/core/Fragment",
+    "sap/ui/model/json/JSONModel"
     ],
     function (Controller,
 	NavContainer,
 	Page,
 	Column,
 	Icon,
-    Fragment
+    Fragment,
+    JSONModel
 	) {
         "use strict";
         return Controller.extend("ui5.walkthrough.controller.Container", {
+          
             onInit: function () {
+               
+
                 this.navContainer = new NavContainer("navContainer", {
                     pages: [
                         new Page("CarsDetails", {
@@ -95,7 +100,7 @@ sap.ui.define([
                 });
                 cli.addCell(Price);
                 var oIcon = new Icon({
-                    src: "sap-icon://navigation-right-arrow",
+                    src: "sap-icon://edit",
                     width: "100px",
                     press: this.onPress.bind(this)
                 });
@@ -123,7 +128,7 @@ sap.ui.define([
                     header: new sap.m.Text({ text: "Price" })
                 });
                 var col8 = new Column({
-                    header: new sap.m.Text({ text: "Goto Detail Page" })
+                    header: new sap.m.Text({ text: "Edit" })
                 });
                 var oTable = new sap.m.Table({
                     width: "100%",
@@ -147,17 +152,22 @@ sap.ui.define([
 
 
             },
-            onPress: function () {
+            onPress: function (oEvent) {
+                var listdata = oEvent.getSource().getBindingContext("car").getPath().split("/")[2];
+                console.log("Selected Row Data:", listdata);
                 this.loadFragment({
-                    id:"helo",
                     type: "JS", 
-                    name: "ui5.walkthrough.fragment.conFrag.fragment"
+                    name: "ui5.walkthrough.fragment.conFrag"
                     }).then(function(oDialog) {
-                        console.log("23456".oDialog)
-                    oDialog.open();
-              
-                    })
-    },
+                     oDialog.open();
+                     oDialog.bindElement("car>/Cars/" + listdata)
+                     
+                      })
+                      
+            },
+            
+
+        
        
             
             carPress: function () {

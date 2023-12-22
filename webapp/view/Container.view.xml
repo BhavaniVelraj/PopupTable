@@ -2,10 +2,8 @@
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m"
   controllerName="ui5.walkthrough.controller.Container">
-      <App>
-        <pages>
+     
               <Page id="mainPage" title="Nav Container">
               </Page>
-        </pages>
-      </App>
+     
 </mvc:View>

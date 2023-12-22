@@ -21,6 +21,8 @@ sap.ui.define([
                 name : "World"
              }
           };
+
+          
           const oModel = new JSONModel(oData);
           this.setModel(oModel);
 
@@ -28,7 +30,7 @@ sap.ui.define([
 
           //Router//
 
-          this.getRouter().initialize();
+         //  this.getRouter().initialize();
 
         
        }

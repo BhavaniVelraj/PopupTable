@@ -38,11 +38,8 @@
         "car": {
             "type": "sap.ui.model.json.JSONModel",
             "uri": "Cars.json"
-          },
-          "employee": {
-            "type": "sap.ui.model.json.JSONModel",
-            "uri": "Employees.json"
           }
+          
       },
      
       "rootView": {
